@@ -1,0 +1,31 @@
+name: 问题反馈
+description: 反馈翻译、显示或运行问题
+body:
+  - type: input
+    id: version
+    attributes:
+      label: 游戏版本与位置
+      placeholder: 例如 v1.3，第 13 章／某个菜单
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 游戏截图
+      description: 请将截图拖入此处，尽量包含前后文。
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题说明
+      description: 哪里不对、为什么觉得不对？可附建议改法。运行或显示问题请补充复现步骤、设备和模拟器版本。
+    validations:
+      required: true
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: 提交前
+      options:
+        - label: 已搜索现有 Issues，没有发现相同问题。
+          required: true
