@@ -1,0 +1,8 @@
+{
+  "version": "Public Release 1.0",
+  "revision": "2026-10-27",
+  "iso_sha256": "8e8b3dc9181b9c1b9f0bd1c87f1f60753c856ef66d159d548b11bc18973e9a46",
+  "translation_csv_sha256": "fc633d53e6d9cc7e70c4e0d5357fa564832a846428979a565576719b279a0f79",
+  "translation_rows": 155569,
+  "revision_note": "含标题 N 下方及出现动画底层残片修正"
+}
