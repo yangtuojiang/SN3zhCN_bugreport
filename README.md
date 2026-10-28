@@ -5,7 +5,21 @@
 汉化本体下载
 https://pan.baidu.com/s/1GisJdlleJ17ELempPDb2_w?pwd=ryab 提取码: ryab 
 
-当前版本：**Public Release 1.0（2026-10-27 修订）**。下方翻译对照以这个完整包为准，后续修改通过验证并打包后再更新。
+当前版本：**Public Release 1.0.1（2026-10-28）**。下方翻译对照以当前版本为准。
+
+## 更新补丁与使用方法
+
+在 [Releases](https://github.com/yangtuojiang/SN3zhCN_bugreport/releases) 下载最新累计更新补丁，完整解压后按 [补丁使用说明（Windows 与安卓）](补丁使用说明.txt) 操作。压缩包内也附有同一份说明、Windows 便携补丁工具和安卓 UniPatcher 官方安装包。
+
+**请保留一份未经修改的 Public Release 1.0 ISO。** 后续累计补丁均从这个正式版本直接升级到最新版，无须逐版安装旧补丁。不要把补丁打到已经更新过的 ISO 上。正确的原镜像 SHA-256 为：
+
+`8e8b3dc9181b9c1b9f0bd1c87f1f60753c856ef66d159d548b11bc18973e9a46`
+
+Windows：解压后运行 `Windows_打补丁.bat`，选择原镜像，等待校验及生成新版 ISO。
+
+安卓：安装包内的 UniPatcher，分别选择 `.xdelta` 补丁、1.0 原 ISO 和新输出文件，保持“无视校验和”关闭后应用补丁。详细步骤及空间要求见上述说明。
+
+更新后重新启动游戏，从游戏内读取普通存档；不要继续使用旧版即时存档。
 
 ## 提交问题
 
@@ -15,7 +29,7 @@ https://pan.baidu.com/s/1GisJdlleJ17ELempPDb2_w?pwd=ryab 提取码: ryab
 
 ## 翻译对照
 
-[下载翻译对照 CSV](https://github.com/yangtuojiang/SN3zhCN_bugreport/raw/refs/heads/main/翻译对照.csv)（基于 Public Release 1.0，UTF-8）。包含已登记的剧情、战斗对白、系统文本、名称和通关存档标题。
+[下载翻译对照 CSV](https://github.com/yangtuojiang/SN3zhCN_bugreport/raw/refs/heads/main/翻译对照.csv)（基于 Public Release 1.0.1，UTF-8）。包含已登记的剧情、战斗对白、系统文本、名称和通关存档标题。
 
 普通玩家查看“原文”和“译文”即可。一句对白可能拆成多行，请按“文本组”和“组内行号”顺序连起来读，再结合游戏截图判断。表中的“对应主槽”用于关联重复存放的同一段文字。
 
@@ -24,7 +38,7 @@ https://pan.baidu.com/s/1GisJdlleJ17ELempPDb2_w?pwd=ryab 提取码: ryab
 - “槽位字节上限”是这段文字可使用的存储空间；“显示列上限”是画面允许的宽度。即使没有超出存储空间，文字仍可能显示不下。未确认的显示宽度留空。
 - “双字节字符上限”只适用于每字占 2 字节的情况。游戏自定义编码与 UTF-8 系统提示不同，UTF-8 常用汉字通常每字占 3 字节；具体以“编码”列为准。表内字节上限均不含末尾的结束标记。
 - 例如 `▲`、`●` 会在游戏里替换成名字。变量本身只占 2 字节，但显示时要按完整名字计算宽度，不能按一个字估算。名字最长允许为12字节（六个字）。
-- “原版槽位字节上限”来自日文原版，“槽位字节上限”来自 Public Release 1.0。“原始／当前偏移”是文字在对应资源文件内的位置，不是它在整个 ISO 中的地址。
+- “原版槽位字节上限”来自日文原版，“槽位字节上限”来自 Public Release 1.0.1。“原始／当前偏移”是文字在对应资源文件内的位置，不是它在整个 ISO 中的地址。
 
 CSV 用于查阅和核对，不是可以直接导入游戏的补丁。修改后还需检查编码、字库、换行和实际显示效果。
 

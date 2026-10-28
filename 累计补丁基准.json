@@ -1,0 +1,13 @@
+{
+  "base_version": "Public Release 1.0",
+  "base_filename": "SN3_zhCN_public_release_1.0.iso",
+  "base_bytes": 1710286848,
+  "base_sha256": "8e8b3dc9181b9c1b9f0bd1c87f1f60753c856ef66d159d548b11bc18973e9a46",
+  "policy": "所有后续更新必须提供从本基准 ISO 直接升级到最新版本的累计补丁，不要求玩家依次安装旧补丁。",
+  "release_gate": [
+    "核对原镜像完整 SHA-256",
+    "从本基准生成补丁",
+    "用补丁还原并核对完整目标 SHA-256",
+    "更新 PC 与安卓说明及版本信息"
+  ]
+}
