@@ -8,5 +8,5 @@
   "update_base_version": "Public Release 1.0",
   "update_base_sha256": "8e8b3dc9181b9c1b9f0bd1c87f1f60753c856ef66d159d548b11bc18973e9a46",
   "patch_zip": "SN3_Public1.0_to_1.0.1_Update.zip",
-  "patch_zip_sha256": "103d83b46207eaa1ad79f0306ab9c0dd464d7cbd0d1e22f6dadd733d4b310c79"
+  "patch_zip_sha256": "dcb455da08753d1829fb6f45ed0bc65444cd3ef1ca91caac0ea30dd1defb5128"
 }
